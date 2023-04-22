@@ -14,12 +14,12 @@ module circuit(
       2'b01: Saida <= A | B;
       2'b10: begin
         Saida <= A + B;
-        if(Saida > 127 && Saida < -128)
+        if(Saida > 127 || Saida > -128)
           FLAG_O <= 1;
       end
       2'b11: begin
         Saida <= A - B;
-        if(Saida > 127 && Saida < -128)
+        if(Saida > 127 && Saida > -128)
           FLAG_O <= 1;
       end
     endcase
