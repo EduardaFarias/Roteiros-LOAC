@@ -1,5 +1,5 @@
 // Maria Eduarda Batista de Farias -  121110641
-// Essa versão funciona apenas para números com 8 bits
+
 parameter n_bits = 8;
 module circuit(
   input logic signed [n_bits-1:0] A, B,
